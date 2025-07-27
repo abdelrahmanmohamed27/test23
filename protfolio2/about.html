@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>protfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-900 text-white">
+
+  
+  <header class="flex flex-wrap md:flex-nowrap items-center justify-between px-6 py-4 bg-gray-800">
+    <div class="text-2xl font-bold text-green-500">Abdelrahman</div>
+    <div class="md:hidden ml-auto">
+      <button id="menuBtn" class="text-white focus:outline-none">☰</button>
+    </div>
+    <nav id="navMenu" class="w-full md:w-auto md:flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 mt-4 md:mt-0 hidden md:block">
+      <a href="home.html" class="block text-gray-300 hover:text-white">Home</a>
+      <a href="about.html" class="block text-gray-300 hover:text-white">About</a>
+      <a href="protfolio.html" class="block text-gray-300 hover:text-white">Portfolio</a>
+      <a href="contact.html" class="block text-gray-300 hover:text-white">Contact</a>
+    </nav>
+    <a href="index.html" class="hidden md:inline-block ml-4">
+      <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Let's Talk</button>
+    </a>
+  </header>
+
+  
+  <div class="max-w-6xl mx-auto mt-10 px-4 sm:px-6 lg:px-8">
+    <h3 class="text-2xl font-bold text-center mb-4">About me</h3>
+    <p class="text-gray-300 text-center text-base sm:text-lg">
+      Hello! I'm <span class="text-green-400">Abdelrahman</span>. I'm a web designer and business development coordinator at MSP,
+      currently pursuing a degree in Business Information Systems at Helwan University. My work blends creativity with strategic
+      thinking, allowing me to craft engaging digital experiences while supporting growth and innovation. Passionate about technology and business,
+      I strive to bridge the gap between design and development to deliver meaningful results.
+    </p>
+
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
+      <div class="bg-black p-6 rounded-lg shadow">
+        <h3 class="text-xl font-semibold mb-2">Development</h3>
+        <img src="https://i.pinimg.com/1200x/10/bd/ce/10bdcee5acece5da5ea77a89d61ee653.jpg"
+             alt="development image"
+             class="h-40 w-full object-cover rounded transform transition-transform duration-300 hover:scale-105" />
+        <p class="text-gray-400 text-sm mt-2 text-center">Programming & Software Development</p>
+      </div>
+
+      <div class="bg-black p-6 rounded-lg shadow">
+        <h3 class="text-xl font-semibold mb-2">Web Design</h3>
+        <img src="web.jpg"
+             alt="Modern website"
+             class="h-40 w-full object-cover rounded transform transition-transform duration-300 hover:scale-105" />
+        <p class="text-gray-400 text-sm mt-2 text-center">Creative & Modern Web Design</p>
+      </div>
+
+      <div class="bg-black p-6 rounded-lg shadow">
+        <h3 class="text-xl font-semibold mb-2">Business</h3>
+        <img src="https://i.pinimg.com/1200x/c6/6c/8c/c66c8c38a67be1157d441f648c5f7a07.jpg"
+             alt="business strategy"
+             class="h-40 w-full object-cover rounded transform transition-transform duration-300 hover:scale-105" />
+        <p class="text-gray-400 text-sm mt-2 text-center">Business Strategy & Growth</p>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="mt-12 bg-gray-800 py-6">
+    <div class="text-center">
+      <p class="text-gray-400 text-sm sm:text-base">&copy; 2025 Abdelrahman Mohamed. All rights reserved.</p>
+    </div>
+  </footer>
+
+  
+  <script>
+    document.getElementById("menuBtn").addEventListener("click", function () {
+      const navMenu = document.getElementById("navMenu");
+      navMenu.classList.toggle("hidden");
+    });
+  </script>
+</body>
+</html>
